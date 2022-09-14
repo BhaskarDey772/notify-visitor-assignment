@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem
+}
+.main img{
+    width:200px;
+    object-fit: cover;
+}
+.main >p{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.rating{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+}
+.rating p{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.rating .testimonial{
+    display:flex;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.rating__title{
+    position: absolute;
+    top: -80%;
+    left: var(--i);
+    font-size: 0.8rem;
+    font-weight: 700;
+    z-index: 1;
+}
+
+.rating label{
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    position: relative;
+    cursor: pointer;
+}
+.rating label:first-of-type::before{
+    content: "";
+    position: absolute;
+    top: 14%;
+    left: -11%;
+    width: 21%;
+    height: 71%;
+    transform: rotate(45deg);
+    background-color: inherit
+    
+}
+.rating label:last-of-type::before{
+    content: "";
+    position: absolute;
+    top: 14%;
+    right: -11%;
+    width: 21%;
+    height: 71%;
+    transform: rotate(45deg);
+    background-color: inherit
+}
+.main button{
+    padding: 0.5rem 3rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+.orange{
+    background-color: orange !important;
+}
+.red{
+    background-color: red !important;
+}
+.green{
+    background-color: green !important;
+}
+.lime{
+    background-color: lime !important;
+}
+
+.yellow{
+    background-color: yellow !important;
+}
