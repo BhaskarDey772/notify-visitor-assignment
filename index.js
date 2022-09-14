@@ -50,7 +50,9 @@ function createRating(rate, position) {
                 
             }
             
-        })        
+        })  
+        
+        
     }
     
     function setColor(ele, color=[]){
@@ -72,9 +74,9 @@ button.addEventListener("click", function(){
     console.log(clickValue)
     })
 
-createRating(rateOne,"first")
-createRating(rateTwo,"second")
-createRating(rateThree,"third")
-createRating(rateFour,"fourth")
+createRating(rateOne,"Responsiveness")
+createRating(rateTwo,"Compelency")
+createRating(rateThree,"Trustworthiness")
+createRating(rateFour,"CustomerSupport")
 
 
